@@ -28,7 +28,7 @@ function showMeTheItems() {
 				if (err) throw err;
 				// console.log(res);
 				for (var i = 0; i < res.length; i++) {
-				console.log(res[i].item_id + ") " + res[i].product_name + " - $" + res[i].price.toFixed(2));
+				console.log("Item #" + res[i].item_id + ") " + res[i].product_name + " - $" + res[i].price.toFixed(2));
 			}
 
 			console.log("------------------------------");
@@ -78,10 +78,11 @@ function purchaseSomeStuff() {
 		}, function(err, res) {
 			if (err) throw err;
 			// Update validation to tie in to check against item_id more specifically.
+			// I don't think this validation is working consistently.
 			var intItemToBuy = parseInt(answer.itemtobuy);
 			if ((intItemToBuy < 1) || (intItemToBuy > 14) || (typeof intItemToBuy !== "number")) {
-				console.log(answer.itemtobuy);
-				console.log("That is not a valid item ID, please try again.");
+				// console.log(answer.itemtobuy);
+				console.log(answer.itemtobuy.toUpperCase() + " is not a valid item ID, please try again.");
 				purchaseSomeStuff();
 			}
 
@@ -92,7 +93,7 @@ function purchaseSomeStuff() {
 			}
 
 			else if (res[0].stock_quantity >= answer.itemquantity) {
-				console.log("Cool!");
+				// console.log("Cool!");
 				itemToBuy = answer.itemtobuy;
 				itemQuantity = answer.itemquantity;
 				updateDatabase();
@@ -102,14 +103,14 @@ function purchaseSomeStuff() {
 };
 
 function updateDatabase() {
-	console.log(itemToBuy);
-	console.log(itemQuantity);
+	// console.log(itemToBuy);
+	// console.log(itemQuantity);
 	connection.query("SELECT * FROM products WHERE ?", {
 		item_id: itemToBuy
 	}, function (err, res) {
 		if (err) throw err;
 		var newQuantity = (res[0].stock_quantity - itemQuantity);
-		console.log(newQuantity);
+		// console.log(newQuantity);
 		connection.query("UPDATE products SET ? WHERE ?", [{
 			stock_quantity: newQuantity
 		}, {
@@ -122,12 +123,12 @@ function updateDatabase() {
 };
 
 function totalOrderAmount() {
-	connection.query("SELECT price FROM products WHERE ?", {
+	connection.query("SELECT * FROM products WHERE ?", {
 		item_id: itemToBuy
 	}, function (err, res) {
 		if (err) throw err;
 		var orderTotal = (res[0].price * itemQuantity);
-		console.log("Your order total is $" + orderTotal.toFixed(2) + "!");
+		console.log("You have ordered " + itemQuantity + " of " + res[0].product_name + ".\nYour order total is $" + orderTotal.toFixed(2) + "!");
 	});
 };
 
