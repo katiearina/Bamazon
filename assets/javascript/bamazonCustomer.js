@@ -65,7 +65,7 @@ function purchaseSomeStuff() {
 	inquirer.prompt([
 	{
 		name: "itemtobuy",
-		message: "What is the ID number of the item you'd like to purchase?"
+		message: "Please enter the item ID number:"
 	},
 	{
 		name: "itemquantity",
