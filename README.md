@@ -28,5 +28,7 @@ The items in this store specifically (in the seeds file, example images, and vid
 
 
 ## Video Demonstration
+[![Part #1 Video Demonstration](http://img.youtube.com/vi/kxMxxiF2AVs/0.jpg)](https://www.youtube.com/watch?v=kxMxxiF2AVs)
 
 ## Contributors
+[@katiearina](https://github.com/katiearina/):gift_heart:
