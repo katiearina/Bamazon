@@ -4,7 +4,8 @@
 This is a MySQL homework project that codes out an application that replicates the Amazon.com model.  
 The items in this store specifically (in the seeds file, example images, and video) are all based on product ideas suggested or created by the character Tom Haverford in the TV show *Parks & Recreation*.  
 
-## Screen Shots
+## Part #1 - Customer View 
+### Screen Shots
 ![Screen Shot 1](https://cloud.githubusercontent.com/assets/22947371/25881726/98733832-350c-11e7-94d4-3ab4747f9c4c.png "Screen Shot 1")
 
 ![Screen Shot 2](https://cloud.githubusercontent.com/assets/22947371/25881723/9870f072-350c-11e7-9386-55c3faba5e6e.png "Screen Shot 2")
@@ -26,9 +27,16 @@ The items in this store specifically (in the seeds file, example images, and vid
 + Add screenshot for if you don't type anything in the ID field.
 + Add screenshot for if you don't type anything in the quantity field.
 
-
-## Video Demonstration
+### Video Demonstration
 [![Part #1 Video Demonstration](http://img.youtube.com/vi/kxMxxiF2AVs/0.jpg)](https://www.youtube.com/watch?v=kxMxxiF2AVs)
+
+<!--  -->
+
+## Part #2 - Manager View 
+### Screen Shots
+
+### Video Demonstration
+
 
 ## Contributors
 [@katiearina](https://github.com/katiearina/):gift_heart:
