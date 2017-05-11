@@ -47,10 +47,10 @@ The current quantity is displayed and user is asked again for the Item ID of wha
 
 ### Video Demonstration
 
-#### Part #1 - Basic Functionality
+#### Basic Functionality
 [![Part #1-1 Video Demonstration](http://img.youtube.com/vi/r9BJwb48fm8/0.jpg)](https://www.youtube.com/watch?v=r9BJwb48fm8)
 
-#### Part #1 - Error Handling
+#### Error Handling
 [![Part #1-2 Video Demonstration](http://img.youtube.com/vi/updwIaJtOV4/0.jpg)](https://www.youtube.com/watch?v=updwIaJtOV4)
 
 <!-- BEGIN PART 2 -->
@@ -106,9 +106,8 @@ If manager selects to "View Low Inventory" and no item has low inventory, manage
 
 ### Video Demonstration
 
-#### Part #2
 [![Part #1-1 Video Demonstration](http://img.youtube.com/vi/NcuTtWfHb90/0.jpg)](https://www.youtube.com/watch?v=NcuTtWfHb90)
 
 
 ## Contributors
-[@katiearina](https://github.com/katiearina/):gift_heart:
+[@katiearina](https://github.com/katiearina/) :gift_heart:
