@@ -5,8 +5,8 @@ This is a MySQL homework project that codes out an application that replicates t
 The items in this store specifically (in the seeds file, example images, and video) are all based on product ideas suggested or created by the character Tom Haverford in the TV show *Parks & Recreation*.
 
 ## Sections
-[####Part #1 - Customer View](#part-1---customer-view)
-[####Part #2 - Manager View](#part-2---manager-view)
+[Part #1 - Customer View](#part-1---customer-view)  
+[Part #2 - Manager View](#part-2---manager-view)
 
 <!-- BEGIN PART 1 -->
 
