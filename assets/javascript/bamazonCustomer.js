@@ -4,7 +4,6 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var prompt = require("prompt");
-var colors = require("colors/safe");
 
 var itemToBuy;
 var itemQuantity;
@@ -151,7 +150,6 @@ function updateDatabase() {
 	}, function (err, res) {
 		if (err) throw err;
 		var newQuantity = (res[0].stock_quantity - itemQuantity);
-		// console.log(newQuantity);
 		connection.query("UPDATE products SET ? WHERE ?", [{
 			stock_quantity: newQuantity
 		}, {
@@ -187,3 +185,6 @@ function endConnection() {
 // FUNCTION CALLS!
 
 showMeTheItems();
+
+
+//---------------------------------------------------------------------------
