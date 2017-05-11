@@ -34,7 +34,9 @@ function showMeTheItems() {
 			if (err) throw err;
 			// console.log(res);
 			for (var i = 0; i < res.length; i++) {
-			console.log("Item #" + res[i].item_id + ") " + res[i].product_name + " - $" + res[i].price.toFixed(2));
+			console.log("Item #" + res[i].item_id + ") " + 
+				res[i].product_name + 
+				" - $" + res[i].price.toFixed(2));
 		}
 
 		console.log("------------------------------");
@@ -124,7 +126,8 @@ function purchaseSomeStuff() {
 			// Eventually update validation to tie in to check against item_id more specifically.
 			var intItemToBuy = parseInt(result.itemtobuy);
 			if ((intItemToBuy < 1) || (intItemToBuy > 14)) {
-				console.log(result.itemtobuy.toUpperCase() + " is not a valid item ID, please try again.");
+				console.log(result.itemtobuy + " is not a valid item ID, please try again." +
+					"\n------------------------------");
 				purchaseSomeStuff();
 			}
 
