@@ -29,7 +29,7 @@ The items in this store specifically (in the seeds file, example images, and vid
 + Add screenshot for if you don't type anything in the quantity field.
 
 ### Video Demonstration
-![Part #1 Video Demonstration](http://img.youtube.com/vi/kxMxxiF2AVs/0.jpg)](https://www.youtube.com/watch?v=kxMxxiF2AVs)
+[![Part #1 Video Demonstration](http://img.youtube.com/vi/kxMxxiF2AVs/0.jpg)](https://www.youtube.com/watch?v=kxMxxiF2AVs)
 
 <!--  -->
 
