@@ -3,7 +3,9 @@
 ## Overview
 This is a MySQL homework project that codes out an application that replicates the Amazon.com model.  
 The items in this store specifically (in the seeds file, example images, and video) are all based on product ideas suggested or created by the character Tom Haverford in the TV show *Parks & Recreation*.
-<!-- ![Tom Haverford GIF](https://cloud.githubusercontent.com/assets/22947371/25927579/d8aa4c52-35c4-11e7-895f-2bb3632d1057.jpg) -->
+
+
+<!-- BEGIN PART 1 -->
 
 ## Part #1 - Customer View 
 ### Screen Shots
@@ -21,8 +23,8 @@ User is then prompted for the quantity they would like to purchase.
 ![Screen Shot 1-4](https://cloud.githubusercontent.com/assets/22947371/25932102/14dd7a5a-35de-11e7-98c4-0bcca798b875.png "Screen Shot 1-4")
 ![Screen Shot 1-5](https://cloud.githubusercontent.com/assets/22947371/25932098/14dbe7b2-35de-11e7-979b-3095657e9ace.png "Screen Shot 1-5")
 
-Once user inputs the Item ID and quantity to purchase (assuming no errors), they are informed they have purchased a specific quantity of the item and given an order total.
-User is also prompted again to see if they would like to purchase anything.
+Once user inputs the Item ID and quantity to purchase (assuming no errors), they are informed they have purchased a specific quantity of the item and given an order total.  
+User is also prompted again to see if they would like to purchase something else.
 ![Screen Shot 1-6](https://cloud.githubusercontent.com/assets/22947371/25932101/14dc8e24-35de-11e7-9047-4033bafe7420.png "Screen Shot 1-6")
 
 If user has forgotten what items are for sale, they can ask for a reminder of the available items, which will repopulate the list of items available.
@@ -31,7 +33,7 @@ If user has forgotten what items are for sale, they can ask for a reminder of th
 If user is done purchasing items, they can select to quit and are thanked for their patronage.
 ![Screen Shot 1-8](https://cloud.githubusercontent.com/assets/22947371/25932106/14e79d78-35de-11e7-889d-0dd608898af1.png "Screen Shot 1-8")
 
-#### Error Handling
+### Error Handling
 
 If a non-numerical Item ID is entered, user is prompted for a valid number input.
 ![Screen Shot 1-9](https://cloud.githubusercontent.com/assets/22947371/25932104/14e6f044-35de-11e7-9b27-84d5d014ddfe.png "Screen Shot 1-9")
@@ -39,13 +41,19 @@ If a non-numerical Item ID is entered, user is prompted for a valid number input
 If a non-valid Item ID is entered, user is prompted for a valid Item ID.
 ![Screen Shot 1-10](https://cloud.githubusercontent.com/assets/22947371/25932105/14e72762-35de-11e7-853e-bba7931b87ba.png "Screen Shot 1-10")
 
-If a user requests a quantity greater than what is available, they will get a message alerting them that there is an insufficient quantity available. The current quantity is displayed and user is asked again for the Item ID of what they would like to purchase.
+If a user requests a quantity greater than what is available, they will get a message alerting them that there is an insufficient quantity available.  
+The current quantity is displayed and user is asked again for the Item ID of what they would like to purchase.
 ![Screen Shot 1-11](https://cloud.githubusercontent.com/assets/22947371/25932107/14e7f32c-35de-11e7-8fb5-940a5219a194.png "Screen Shot 1-11")
 
 ### Video Demonstration
-[![Part #1 Video Demonstration](http://img.youtube.com/vi/kxMxxiF2AVs/0.jpg)](https://www.youtube.com/watch?v=kxMxxiF2AVs)
 
-<!--  -->
+#### Part #1 - Basic Functionality
+[![Part #1-1 Video Demonstration](http://img.youtube.com/vi/r9BJwb48fm8/0.jpg)](https://www.youtube.com/watch?v=r9BJwb48fm8)
+
+#### Part #1 - Error Handling
+[![Part #1-2 Video Demonstration](http://img.youtube.com/vi/updwIaJtOV4/0.jpg)](https://www.youtube.com/watch?v=updwIaJtOV4)
+
+<!-- BEGIN PART 2 -->
 
 ## Part #2 - Manager View 
 ### Screen Shots
@@ -88,15 +96,18 @@ If Manager is finished, they can select to quit and are thanked.
 ![Screen Shot 2-15](https://cloud.githubusercontent.com/assets/22947371/25932886/068b4ec4-35e2-11e7-82a8-fd64fb7eb5c8.png "Screen Shot 2-15")
 ![Screen Shot 2-16](https://cloud.githubusercontent.com/assets/22947371/25932887/068c09a4-35e2-11e7-9c7f-d31c66564b39.png "Screen Shot 2-16")
 
-#### Error Handling
+### Error Handling
 
 If manager selects to "View Low Inventory" and no item has low inventory, manager is notified.
 ![Screen Shot 2-17](https://cloud.githubusercontent.com/assets/22947371/25932888/068e67bc-35e2-11e7-8b5b-5bd29c01e4fd.png "Screen Shot 2-17")
 
-If a non-valid Item ID or quantity are entered, the same error handling applies as in Part #1.
+*Note:* If a non-valid Item ID or quantity are entered, the same error handling applies as in Part #1.
 
 
 ### Video Demonstration
+
+#### Part #2
+[![Part #1-1 Video Demonstration](http://img.youtube.com/vi/NcuTtWfHb90/0.jpg)](https://www.youtube.com/watch?v=NcuTtWfHb90)
 
 
 ## Contributors
